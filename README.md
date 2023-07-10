@@ -14,8 +14,8 @@ Maven: A build automation tool used for managing dependencies and building the p
 </details>
 <details>
 
-<summary>Summary</summary>
-Features
+<summary>Features</summary>
+
 User Authentication: The application supports user registration and login functionality.
 CRUD Operations: Users can perform Create, Read, Update, and Delete operations on data stored in the application's database.
 Responsive UI: The frontend is designed to provide a seamless user experience across different devices and screen sizes.
