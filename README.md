@@ -4,7 +4,7 @@ This repository contains a full stack web application built using Spring Boot fo
 <details>
 
 <summary>Summary</summary>
-#Technologies Used
+# Technologies Used
 Spring Boot: A Java-based framework used for building robust and scalable web applications.
 React: A JavaScript library for building user interfaces.
 Git: A distributed version control system for tracking changes in code.
