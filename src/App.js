@@ -3,22 +3,38 @@ import './App.css';
 
 function App() {
   return (
-      <div className='mt-5 container'>
-         <div className="card">
-           <div className="card-header">
-             Your Todo's
-           </div>
-           <div className="card-body">
-             <TodoTable todos={todos} deleteTodo={deleteTodo}/>
-             <button onClick={() => setShowAddTodoForm(!showAddTodoForm)} className='btn btn-primary'>
-               {showAddTodoForm ? 'Close New Todo' : 'New Todo'}
-             </button>
-           {showAddTodoForm &&
-             <NewTodoForm addTodo={addTodo}/>
-           }
-           </div>
-         </div>
-       </div>
+    <div>
+      
+      <body>
+    <h2>TODO List</h2>
+    <table>
+        <thead>
+            <tr>
+            <th scope="col">SrNo</th>
+                <th scope="col">Description</th>
+                <th scope="col">Assigned To</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Finish project report</td>
+                <td>John Doe</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Prepare presentation</td>
+                <td>Jane Smith</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Review code changes</td>
+                <td>Michael Johnson</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+    </div>
   );
 }
 
