@@ -3,22 +3,22 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='mt-5 container'>
+         <div className="card">
+           <div className="card-header">
+             Your Todo's
+           </div>
+           <div className="card-body">
+             <TodoTable todos={todos} deleteTodo={deleteTodo}/>
+             <button onClick={() => setShowAddTodoForm(!showAddTodoForm)} className='btn btn-primary'>
+               {showAddTodoForm ? 'Close New Todo' : 'New Todo'}
+             </button>
+           {showAddTodoForm &&
+             <NewTodoForm addTodo={addTodo}/>
+           }
+           </div>
+         </div>
+       </div>
   );
 }
 
