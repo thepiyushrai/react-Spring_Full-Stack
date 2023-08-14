@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-
+import TodoRowItem from './comoponents/TodoRowItem';
 function App() {
   return (
-    <div>
-      
+   <div className='mt-5 container'>
+      <div className="card">
       <body>
-    <h2>TODO List</h2>
-    <table>
+      <div className="card-header"><h2>Your TODO </h2></div>
+<div className='card-body'>
+    <table className='table tbale-hover'>
         <thead>
             <tr>
             <th scope="col">SrNo</th>
@@ -16,24 +17,22 @@ function App() {
             </tr>
         </thead>
         <tbody>
+<TodoRowItem/>
             <tr>
-                <td>1</td>
-                <td>Finish project report</td>
-                <td>John Doe</td>
-            </tr>
-            <tr>
-                <td>2</td>
+                <th scope='row'>2</th>
                 <td>Prepare presentation</td>
                 <td>Jane Smith</td>
             </tr>
             <tr>
-                <td>3</td>
+                <th scope='row'>3</th>
                 <td>Review code changes</td>
                 <td>Michael Johnson</td>
             </tr>
         </tbody>
     </table>
+    </div>
 </body>
+</div>
     </div>
   );
 }
