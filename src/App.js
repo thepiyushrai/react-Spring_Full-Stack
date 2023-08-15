@@ -7,6 +7,13 @@ import TodoRowItem from './comoponents/TodoRowItem';
 
  */
 function App() {
+  const [todos, setTodos] = useState([
+    {rowNumber: 1, rowDescription: 'class work ', rowAssigned: 'User One'},
+    {rowNumber: 2, rowDescription: ' planting', rowAssigned: 'User Two'},
+    {rowNumber: 3, rowDescription: ' Maths', rowAssigned: 'User One'},
+    {rowNumber: 4, rowDescription: 'Hindi study', rowAssigned: 'User One'}
+  ]
+  )
   return (
    <div className='mt-5 container'>
       <div className="card">
@@ -22,7 +29,9 @@ function App() {
             </tr>
         </thead>
         <tbody>
-<TodoRowItem/>
+<TodoRowItem
+rowNumber ={todos[0].rowNumber} rowDescription={todos[0].rowDescription} rowAssigned = {todos[0].rowAssigned}
+/>
             <tr>
                 <th scope='row'>2</th>
                 <td>Prepare presentation</td>
