@@ -8,10 +8,10 @@ import TodoRowItem from './comoponents/TodoRowItem';
  */
 function App() {
   const [todos, setTodos] = useState([
-    {rowNumber: 1, rowDescription: 'class work ', rowAssigned: 'User One'},
-    {rowNumber: 2, rowDescription: ' planting', rowAssigned: 'User Two'},
-    {rowNumber: 3, rowDescription: ' Maths', rowAssigned: 'User One'},
-    {rowNumber: 4, rowDescription: 'Hindi study', rowAssigned: 'User One'}
+    {rowNumber: 1, rowDescription: 'class work ', rowAssigned: 'User no One'},
+    {rowNumber: 2, rowDescription: ' planting', rowAssigned: 'User no Two'},
+    {rowNumber: 3, rowDescription: ' Maths', rowAssigned: 'User no One'},
+    {rowNumber: 4, rowDescription: 'Hindi study', rowAssigned: 'User no One'}
   ]
   )
   return (
