@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import TodoRowItem from './comoponents/TodoRowItem';
+import React, {useState} from 'react';
 /**
  * @author Piyush Rai
  * @date 11.08.2023
@@ -29,19 +30,17 @@ function App() {
             </tr>
         </thead>
         <tbody>
+
+      {pr}    
 <TodoRowItem
 rowNumber ={todos[0].rowNumber} rowDescription={todos[0].rowDescription} rowAssigned = {todos[0].rowAssigned}
 />
-            <tr>
-                <th scope='row'>2</th>
-                <td>Prepare presentation</td>
-                <td>Jane Smith</td>
-            </tr>
-            <tr>
-                <th scope='row'>3</th>
-                <td>Review code changes</td>
-                <td>Michael Johnson</td>
-            </tr>
+<TodoRowItem
+rowNumber ={todos[1].rowNumber} rowDescription={todos[1].rowDescription} rowAssigned = {todos[1].rowAssigned}
+/>
+<TodoRowItem
+rowNumber ={todos[3].rowNumber} rowDescription={todos[3].rowDescription} rowAssigned = {todos[3].rowAssigned}
+/>
         </tbody>
     </table>
     </div>
