@@ -31,7 +31,7 @@ function App() {
         </thead>
         <tbody>
 
-      {pr}    
+      {props.todos}    
 <TodoRowItem
 rowNumber ={todos[0].rowNumber} rowDescription={todos[0].rowDescription} rowAssigned = {todos[0].rowAssigned}
 />
