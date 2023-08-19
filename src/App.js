@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import TodoRowItem from './comoponents/TodoRowItem';
+import TodoTable from './comoponents/TodoTable';
 import React, {useState} from 'react';
 /**
  * @author Piyush Rai
@@ -21,28 +22,7 @@ function App() {
       <body>
       <div className="card-header"><h2>Your TODO </h2></div>
 <div className='card-body'>
-    <table className='table tbale-hover'>
-        <thead>
-            <tr>
-            <th scope="col">SrNo</th>
-                <th scope="col">Description</th>
-                <th scope="col">Assigned To</th>
-            </tr>
-        </thead>
-        <tbody>
-
-      {props.todos}    
-<TodoRowItem
-rowNumber ={todos[0].rowNumber} rowDescription={todos[0].rowDescription} rowAssigned = {todos[0].rowAssigned}
-/>
-<TodoRowItem
-rowNumber ={todos[1].rowNumber} rowDescription={todos[1].rowDescription} rowAssigned = {todos[1].rowAssigned}
-/>
-<TodoRowItem
-rowNumber ={todos[3].rowNumber} rowDescription={todos[3].rowDescription} rowAssigned = {todos[3].rowAssigned}
-/>
-        </tbody>
-    </table>
+   <TodoTable todos = {todos}></TodoTable>
     </div>
 </body>
 </div>
